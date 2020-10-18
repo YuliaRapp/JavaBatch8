@@ -11,7 +11,6 @@ public class Task {
 		 */
 		
 		boolean workday=true;
-		
 		int day=1;
 		
 		while(workday) {
@@ -20,7 +19,7 @@ public class Task {
 				System.out.println("I need a day off");
 			}else {
 				System.out.println("It is weekend and I am off");
-				workday=false;
+				break;
 			}
 		
 			day++;

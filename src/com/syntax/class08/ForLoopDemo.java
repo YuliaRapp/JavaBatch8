@@ -43,7 +43,7 @@ public class ForLoopDemo {
 		for(int i=0; i<=30; i+=3) {
 			System.out.print(i+" ");
 		}
-		
+	
 	}
 
 }
