@@ -2,7 +2,7 @@ package com.syntax.class13;
 
 public class BankApplication {
     public static void main(String[] args) {
-        javaclass13.Account burjusAccount=new javaclass13.Account();
+        Account burjusAccount=new Account();
         burjusAccount.accountId="123";
         burjusAccount.userName="Burju";
         burjusAccount.password="pass123";
@@ -27,7 +27,7 @@ public class BankApplication {
         }
 
 
-        javaclass13.Account eliassAcount=new javaclass13.Account();
+        Account eliassAcount=new Account();
         eliassAcount.accountId="125";
         eliassAcount.userName="Elias";
         eliassAcount.password="pass123";
