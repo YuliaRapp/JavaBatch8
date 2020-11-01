@@ -10,7 +10,7 @@ public class Main {
         d1.type = "Bulldog";
         d1.gender = 'F';
         d1.isHealthy = true;
-        d1.bark();
+        Dog.bark();
         d1.fetch();
         d1.play("anyname");
 
