@@ -55,6 +55,9 @@ public class Main {
         task3.isStringpalindrome("eabae");
         task3.isStringpalindrome("eabaf");
 
+        Temp temp=new Temp();
+       int s= temp.hi;
+
 
 
 
