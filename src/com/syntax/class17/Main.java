@@ -3,6 +3,7 @@ package com.syntax.class17;
 import com.syntax.class16.Task;
 
 public class Main {
+    Student qasim = new Student(); // now it is a instance variable
     public static void main(String[] args) {
     /*    Task1 task1=new Task1();
         String email = task1.createEmail("Ahmed", "Qasim", "Gmail");
@@ -23,10 +24,9 @@ public class Main {
         variables.varsDemo1();*/
 
 
+
         Student qasim = new Student();
-        qasim.name = "Qasim";
-        qasim.age = 30;
-        qasim.marks = 90;
+        qasim.printInfo();
 
         qasim.StudentsRegistered();
         qasim.numberOfStudentsEnrolled++;
@@ -47,6 +47,12 @@ public class Main {
        // ilya.numberOfStudentsEnrolled++;
         ilya.StudentsRegistered();
 
+
+
+     /*   com.syntax.class18.Student student1 = new com.syntax.class18.Student();
+        student1.studentName = "Moneer is a bad DJ";
+        student1.studentID = 123;
+        com.syntax.class18.Student.numberOfStudents++;*/
 
     }
 }
