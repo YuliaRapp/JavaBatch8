@@ -16,11 +16,11 @@ public class Student {
 
      */
 
-    Student(String nameValue, double subject1Value, double subject2Value, double subject3Value) {
-        name = nameValue;
-        subject1 = subject1Value;
-        subject2 = subject2Value;
-        subject3 = subject3Value;
+    Student(String name, double subject1, double subject2, double subject3) {
+        this.name = name;
+        this.subject1 = subject1;
+        this.subject2 = subject2;
+        this.subject3 = subject3;
     }
 
     void printGradeAverage() {
@@ -29,6 +29,7 @@ public class Student {
     }
 
     void printsubject1Marks(){
+        System.out.println("Marks in the subject 1 "+subject1);
 
     }
 

@@ -26,10 +26,10 @@ public class Task1 {
 
     }
 
-    Task1(int ageValue, String nameValue, char gradeValue) {
-        age = ageValue;
-        name = nameValue;
-        grade = gradeValue;
+    Task1(int age, String name, char grade) {
+        this.age = age;
+        this.name = name;
+        this.grade = grade;
         System.out.println("I will be called when 3 arguments are passed to the constructor");
 
     }
