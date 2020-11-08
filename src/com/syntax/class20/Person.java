@@ -14,14 +14,11 @@ public class Person {
     int numberOfKids;
     double salary;
     String education;
-//
+// if i have 100 fields in class and 100 lines of code that i want to execute every time someone is creating an object of my class
     Person() {
-        System.out.println(" line 1");
-        System.out.println(" line 1");
-        System.out.println(" line 1");
-        System.out.println(" line 1");
-        System.out.println(" line 1");
-        System.out.println(" line 1");
+        System.out.println(" These are important lines they must be executed each time a constructor is created");
+        System.out.println(" These are important lines they must be executed each time a constructor is created");
+
     }
 
     Person(String name, int age, String phone, double salary) {
@@ -32,6 +29,10 @@ public class Person {
         this.salary = salary;
         this.weight = 60;
         this.height = 5.4;
+        //i do not need these lines because i know how to use this() in java
+        /*System.out.println(" These are important lines they must be executed each time a constructor is created");
+        System.out.println(" These are important lines they must be executed each time a constructor is created");*/
+
 
 
     }
@@ -49,6 +50,9 @@ public class Person {
         this.salary = salary;
         this.martialStatus = martialStatus;
         this.numberOfKids = numberOfKids;
+        //i do not need these lines because i know how to use this() in java
+        /*System.out.println(" These are important lines they must be executed each time a constructor is created");
+        System.out.println(" These are important lines they must be executed each time a constructor is created");*/
 
     }
 
@@ -57,22 +61,28 @@ public class Person {
         this();
         this.martialStatus = martialStatus;
         this.numberOfKids = numberOfKids;
+        //i do not need these lines because i know how to use this() in java
+        /*System.out.println(" These are important lines they must be executed each time a constructor is created");
+        System.out.println(" These are important lines they must be executed each time a constructor is created");*/
 
     }
 
     Person(String name, int age, String phone, double salary, char martialStatus, int numberOfKids, String education, double height, double weight) {
-        // this(name, age, phone, salary, martialStatus, numberOfKids, education);
         this();
-        this.height = height;
+        // this(name, age, phone, salary, martialStatus, numberOfKids, education);
+//        this.height = height;
         this.weight = weight;
+        //i do not need these lines because i know how to use this() in java
+        /*System.out.println(" These are important lines they must be executed each time a constructor is created");
+        System.out.println(" These are important lines they must be executed each time a constructor is created");*/
 
 
     }
 
     public static void main(String[] args) {
         Person person = new Person("KhaliqYar", 33, "123456678", 0, 'M', 0, "SDET", 5.7, 68);
-
         Person person1 = new Person("KhaliqYar", 33, "123456678", 0);
+        Person person2=new Person();
 
     }
 
