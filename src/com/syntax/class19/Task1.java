@@ -14,7 +14,7 @@ public class Task1 {
     String name;
     char grade;
 
-    Task1() {
+     Task1() {
         System.out.println("I will be called when no arguments are passed to the constructor");
     }
 
