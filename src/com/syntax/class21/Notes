@@ -29,4 +29,10 @@ child.print();
 we can access our static fields and methods using class names and using objects
 of the class bu using Class name is preferable because static methods and fields
 belong to class not to objects.
+SuperKeyword:
+As we can use this keyword in java to refer to the current fields and methods we can use super
+keyword to access the fields and methods from immediate parent class.
+it is used in subclasses to access superclass members
+in inheritance when we create an object
+of a class all of the default constructors from p
 
