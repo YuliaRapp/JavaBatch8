@@ -1,7 +1,7 @@
 package com.syntax.class24;
 
 
-class X
+class GrandParent
 {
     void calculate(int a, int b)
     {
@@ -9,7 +9,7 @@ class X
     }
 }
 
-class Y extends X
+class Parent extends GrandParent
 {
     @Override
     void calculate(int a, int b)
@@ -18,12 +18,16 @@ class Y extends X
     }
 }
 
-class Z extends Y
+class PoorChild extends Parent
 {
     @Override
     void calculate(int a, int b)
     {
         System.out.println("Class Z");
+    }
+
+    void printSpecial(){
+        System.out.println("This is my own method");
     }
 }
 
@@ -31,17 +35,25 @@ public class MainClass
 {
     public static void main(String[] args)
     {
-        X x = new Y();
+        //creating an object of type y and as X is a parent of Y we can
+        //store the y into a box of type X
+        GrandParent grandParent = new Parent();
 
-        x.calculate(10, 20);
+        grandParent.calculate(10, 20);
 
-        Y y = (Y) x;
+        Parent parent = (Parent) grandParent;
 
-        y.calculate(50, 100);
+        parent.calculate(50, 100);
 
-        Z z = (Z) y;
+        PoorChild poorChild = (PoorChild) parent;
 
-        z.calculate(100, 200);
+        poorChild.calculate(100, 200);
+
+
+
+
+
+
         //Break till 1:05
     }
 }
