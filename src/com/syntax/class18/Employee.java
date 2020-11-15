@@ -19,6 +19,7 @@ Print out the eID , salary and  CEO for each of the objects
        employee1.salary=100000;
        Employee.CEO="Sumair";
 
+
         System.out.println( employee1.empID);
         System.out.println(employee1.salary);
         System.out.println(CEO);

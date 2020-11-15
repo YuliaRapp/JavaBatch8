@@ -14,4 +14,8 @@ public class Milos extends DaniloParents{
     public void run(){
         System.out.println("i can run");
     }
+
+    double performCalculation(int a, int b){
+        return a+b;
+    }
 }

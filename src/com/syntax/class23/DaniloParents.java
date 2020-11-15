@@ -12,5 +12,9 @@ public class DaniloParents {
         System.out.println("we like to eat meat the most");
     }
 
+    double performCalculation(int a, int b){
+        return a+b;
+    }
+
 
 }

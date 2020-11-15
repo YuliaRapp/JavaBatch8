@@ -41,11 +41,17 @@ public class Task1 {
 
     }
 
+    public void initFields(int age){
+         this.age=age;
+    }
+
     public static void main(String[] args) {
         Task1 task1 = new Task1(30, "Jack", 'K');
         Task1 task2 = new Task1(30, "Jack");
         Task1 task3 = new Task1(30);
         Task1 task4 = new Task1();
+        task4.initFields(60);
+        System.out.println(task4.age);
     }
 
 

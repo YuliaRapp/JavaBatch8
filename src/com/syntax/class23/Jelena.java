@@ -6,4 +6,8 @@ public class Jelena extends DaniloParents{
 
         System.out.println("I like Pasta");
     }
+
+    double performCalculation(int a, int b){
+        return a+b;
+    }
 }
