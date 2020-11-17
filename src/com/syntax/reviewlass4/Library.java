@@ -26,13 +26,16 @@ public class Library {
 
                     for (Book studentBooks:student.getBooks()
                          ) {
-                        if(studentBooks.getISBN().equals(bookVar.getISBN())){
-                            System.out.println("you already have this book");
-                        }else {
-                            System.out.println("Issuing the book");
-                            book.setAvailable(false);
+                        if(studentBooks!=null){
+                            if(bookVar.getISBN().equals(studentBooks.getISBN())){
+                                System.out.println("you already have this book");
+                            }else {
+                                System.out.println("Issuing the book");
+                                book.setAvailable(false);
 
+                            }
                         }
+
                     }
 
 
