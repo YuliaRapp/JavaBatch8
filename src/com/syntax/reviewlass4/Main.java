@@ -3,6 +3,7 @@ package com.syntax.reviewlass4;
 public class Main {
 
     public static void main(String[] args) {
+        //break
         Book[] books=new Book[2];
 
         Student[] students=new Student[3];
@@ -22,6 +23,8 @@ public class Main {
         students[2]=student2;
         Librarian librarian=new Librarian("Ali","Ali123");
         Library library=new Library("Syntax Library",books,students,librarian);
+        library.issueBook(book1,student1,librarian);
+        library.issueBook(book1,student1,librarian);
 
 
 

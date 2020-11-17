@@ -18,17 +18,23 @@ public class Library {
         System.out.println("Checking for the availability of a book inside library");
         for (Book book:books
              ) {
-            if(book.getISBN().equals(bookVar)){
+            if(bookVar.getISBN().equals(book.getISBN())){
 
                 System.out.println("Book found checking if that is available or already issued ");
                 if(bookVar.isAvailable()){
                     System.out.println("Book is available checking if student can have this book");
-                    if(student.getBooks().length>=2){
-                        System.out.println("Sorry you limit has exceeded");
-                    }else {
-                        System.out.println("Issuing the book");
 
+                    for (Book studentBooks:student.getBooks()
+                         ) {
+                        if(studentBooks.getISBN().equals(bookVar.getISBN())){
+                            System.out.println("you already have this book");
+                        }else {
+                            System.out.println("Issuing the book");
+                            book.setAvailable(false);
+
+                        }
                     }
+
 
 
                 }else {
