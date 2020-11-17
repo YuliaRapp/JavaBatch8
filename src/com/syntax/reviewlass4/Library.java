@@ -1,10 +1,10 @@
 package com.syntax.reviewlass4;
 
 public class Library {
-    String name;
-    Book books[];
-    Student[] students;
-    Librarian librarian;
+    private String name;
+   private Book books[];
+   private Student[] students;
+   private Librarian librarian;
 
     public Library(String name, Book[] books, Student[] students, Librarian librarian) {
         this.name = name;
@@ -21,7 +21,7 @@ public class Library {
             if(bookVar.getISBN().equals(book.getISBN())){
 
                 System.out.println("Book found checking if that is available or already issued ");
-                if(bookVar.isAvailable()){
+               /* if(bookVar.isAvailable()){
                     System.out.println("Book is available checking if student can have this book");
 
                     for (Book studentBooks:student.getBooks()
@@ -42,7 +42,7 @@ public class Library {
 
                 }else {
                     System.out.println("Book not available");
-                }
+                }*/
             }else {
                 System.out.println("Book does not exists in the library");
             }

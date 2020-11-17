@@ -9,6 +9,8 @@ public class Book {
     private boolean isAvailable;
 
     public Book(String bookName, String title, String author, int year, String ISBN, boolean isAvailable) {
+        System.out.println("Initializing the "+bookName+" in the constructor");
+
         this.bookName = bookName;
         this.title = title;
         this.author = author;
