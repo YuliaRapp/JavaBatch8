@@ -24,6 +24,14 @@ public abstract class Vehicle {
     }
     public abstract  void start();
     public abstract  void brake();
+
+    public static final void print (){
+        System.out.println(" Just a static and final method");
+    }
+
+    public  final void printInfo (){
+        System.out.println(" Just a  final method");
+    }
 }
 //can have only one public class in a file
 abstract class Car extends Vehicle{
@@ -64,10 +72,10 @@ class Tesla extends Car{
 
 }
 
-class toyota extends Car{
+class Toyota extends Car{
 
     String make;
-    toyota(String color, String carType,String make) {
+    Toyota(String color, String carType, String make) {
         super(color, carType);
         this.make=make;
     }

@@ -23,6 +23,19 @@ To implement Abstraction abstract.
 
 If we have declared a class as abstract we can not create objects of that
 class
+Key Points:
+Abstract class:
+1) can have Abstract and non abstract method
+2) can have constructor
+3) can have instance and static members
+4) can have static and final methods and fields
+5)abstract methods can't have static  modifier and can not be private and
+we can not make them final
+
+We can not create objects of Abstract class.
+
+
+
 
 
 
