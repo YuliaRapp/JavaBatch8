@@ -2,7 +2,7 @@ package com.syntax.class28;
 
 public  interface MyInterface extends MyInterface2,MyInterface3 {
      //before Java 8
-     String name ="hi";
+     String name ="Hellllo";
      void printInfo();
 
 

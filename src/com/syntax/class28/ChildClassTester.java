@@ -10,5 +10,7 @@ public class ChildClassTester {
        // MyInterface.name="something"; //fields can not be reassigned as they are always final
        MyInterface myInterface=new ChildClass();
        myInterface.printInfo();
+       //break till 12:10
+
     }
 }
