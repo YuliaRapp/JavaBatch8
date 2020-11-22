@@ -10,3 +10,5 @@ will get an error. They are widely used to support lambdas in java
 2) An interface can have static methods, default method and abstract methods
 3) Any class who implements the Interface has to provide the implementation for the
 abstract methods or we can declare that class as abstract.
+
+//Break 11:30
