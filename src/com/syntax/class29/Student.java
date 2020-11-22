@@ -1,6 +1,6 @@
 package com.syntax.class29;
 
-public class Student implements PrintInfo {
+public class Student implements PrintInfo,PayFee {
 
     @Override
     public void printName() {
@@ -16,5 +16,10 @@ public class Student implements PrintInfo {
     public void printAddress() {
 
         System.out.println(" bla bla bla USA");
+    }
+
+    @Override
+    public void payFee() {
+        System.out.println("Paid");
     }
 }
