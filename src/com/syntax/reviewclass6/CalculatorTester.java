@@ -7,5 +7,13 @@ public class CalculatorTester {
         calculator.printNumber();
         calculator.subtract(100);
         calculator.printNumber();
+
+        Calculator calculator1=new Calculator(150);
+        calculator1.add(100);
+        calculator1.printNumber();
+        calculator1.subtract(1000);
+        calculator1.printNumber();
+        Calculator.printStaticInfo();
+
     }
 }

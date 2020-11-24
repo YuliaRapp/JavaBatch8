@@ -19,3 +19,6 @@ when ever methods are called all the statements inside those methods are execute
 
 Calling a method.
 we can call non static methods by using the objects only
+Important points
+We can call the static methods and can use static fields from non static methods without objects or class name
+if we are in the same class, but we can not call non static methods from static methods
