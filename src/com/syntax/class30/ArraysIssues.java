@@ -2,7 +2,7 @@ package com.syntax.class30;
 
 import java.util.Arrays;
 
-public class Collection {
+public class ArraysIssues {
     public static void main(String[] args) {
         String name = "Ali";
         String name1 = "Nabin";
@@ -23,6 +23,9 @@ public class Collection {
         System.out.println(names.length);
         names = expandArray(names);
         names[3]="Davit";
+        names[4]="Maria";
+        names[5]="Mike";
+        names = expandArray(names);
         System.out.println(names.length);
         System.out.println(Arrays.toString(names));
 
