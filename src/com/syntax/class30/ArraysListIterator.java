@@ -14,8 +14,12 @@ public class ArraysListIterator {
         arrayList.add(200);
         Iterator<Integer> iterator = arrayList.iterator();
         while (iterator.hasNext()){
-            System.out.println("Qasim");
-            iterator.next();
+            Integer next = iterator.next();
+            for (int i = 0; i < 4; i++) {
+                System.out.println(next);
+            }
+
+
 
         }
 
