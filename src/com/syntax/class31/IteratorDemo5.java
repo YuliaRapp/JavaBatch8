@@ -13,6 +13,7 @@ public class IteratorDemo5 {
         drinks.add("scotch");
         drinks.add("vodka");
         drinks.add("turkish Raki");
+        System.out.println(drinks);
         Iterator<String> iterator = drinks.iterator();
         while (iterator.hasNext()){
             String next = iterator.next();
@@ -22,7 +23,8 @@ public class IteratorDemo5 {
             }
         }
 
-
+        System.out.println(drinks);
+//break till 01PM
 
     }
 }

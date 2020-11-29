@@ -12,6 +12,7 @@ public class ArrayListIteratorDemo {
         doubleArrayList.add(180.00);
         doubleArrayList.add(190.00);
         doubleArrayList.add(150.00);
+        doubleArrayList.add(180.00);
 
         Iterator<Double> iterator = doubleArrayList.iterator();
 

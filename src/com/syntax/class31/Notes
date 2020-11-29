@@ -18,6 +18,8 @@ of the iterator and then i can call the above three methods to iterate or to rem
 Note:
 Iterators can be used only once. Once we have used the iterator we need a new once
 if we want to iterate the collection again.
+ArrayList:
+Are consecutive memory locations
 
 
 
