@@ -32,11 +32,10 @@ public class ArrayClassDemo2 {
 */
         Iterator<Double> iterator = doubleArrayList.iterator();
 
+        System.out.println("Before the while loop");
         while (iterator.hasNext()){
-            Double next = iterator.next();
-            if(next<20){
-                iterator.remove();
-            }
+            System.out.println(iterator.next());
+
         }
 
 

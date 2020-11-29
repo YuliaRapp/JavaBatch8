@@ -15,7 +15,9 @@ next()  -- will return me the next element from the collection
 remove().  -- remove method it will remove the element from the collection.
 All of the collection classes they have a method iterator() using this method i can get an object
 of the iterator and then i can call the above three methods to iterate or to remove the elements
-
+Note:
+Iterators can be used only once. Once we have used the iterator we need a new once
+if we want to iterate the collection again.
 
 
 
