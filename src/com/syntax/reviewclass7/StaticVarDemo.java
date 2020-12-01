@@ -7,17 +7,11 @@ class Student {
     final static int MAX_STUDENTS_ALLOWED = 3;
     private static Student student = null;
 
-    private Student() {
+    public Student() {
         totalStudentCount++;
     }
 
-    static Student getInstance() {
-        if (student == null) {
-            student = new Student();
-        }
-        return student;
 
-    }
 
     void printInfo() {
         System.out.println("Name of the student "
@@ -32,18 +26,10 @@ public class StaticVarDemo {
     public static void main(String[] args) {
 
 
-        Student student5 = Student.getInstance();
-        student5.name = "Mahmut";
-        student5.printInfo();
 
-        Student student6 = Student.getInstance();
-        student6.name = "Davit";
-        student6.printInfo();
-        System.out.println(student5.name);
-        System.out.println(student6.name);
 
-       // Student student=new Student();
-     /*   School school = new School();
+
+        School school = new School();
         Student student1 = new Student();
         student1.name = "Ali";
         student1.printInfo();
@@ -62,7 +48,7 @@ public class StaticVarDemo {
         school.addStudent(student4);
         Student student5 = new Student();
         student5.name = "Mahmut";
-        student5.printInfo();*/
+        student5.printInfo();
 
 
 
