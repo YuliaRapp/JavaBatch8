@@ -47,8 +47,20 @@ when we have something common for all objects
 when all the objects of the same class share a common info
 
 Important
-static variables are rarely used
-// Break till 08:35
+1)static variables are rarely used other than being declared
+as final
+2)static variables are stored in the static memory area
+3)Visibility is same as instance variables
+4)static fields and methods can be access by just specifying
+the name of the class and name of variable or method
+5) In static variables we define common values.
+==============================================================
+Java modifiers
+1) Access modifiers like private, default, protected and public
+2) Non-access modifiers like final,abstract,static,synchronized
+Access modifiers: these can be used to control the visibility of our instance/static variables/methods/
+
+
 
 
 
