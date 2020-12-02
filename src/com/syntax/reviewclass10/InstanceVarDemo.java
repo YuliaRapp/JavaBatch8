@@ -1,4 +1,4 @@
-package com.syntax.reviewclass7;
+package com.syntax.reviewclass10;
 
 public class InstanceVarDemo {
    String name="Mahmut";

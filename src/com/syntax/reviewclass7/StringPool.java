@@ -1,4 +1,4 @@
-package com.syntax.reviewclass5;
+package com.syntax.reviewclass7;
 
 public class StringPool {
     public static void main(String[] args) {

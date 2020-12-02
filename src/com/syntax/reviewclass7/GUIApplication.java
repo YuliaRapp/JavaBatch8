@@ -1,4 +1,4 @@
-package com.syntax.reviewclass5;
+package com.syntax.reviewclass7;
 
 import javafx.application.Application;
 import javafx.scene.Scene;

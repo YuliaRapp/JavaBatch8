@@ -1,4 +1,4 @@
-package com.syntax.reviewclass6;
+package com.syntax.reviewclass8;
 
 public class Methods {
 
