@@ -1,4 +1,4 @@
-package com.syntax.reviewlass4;
+package com.syntax.reviewclass4;
 
 public class Dog {
     String name;

@@ -10,10 +10,10 @@ properties of local variables.
 1)we can't access them out side of the block
 for example
 if(2>1){
-int x=10 //this variable will not be accessible outside of the
+int grandParent=10 //this variable will not be accessible outside of the
 //curly brackets of if condition
 }
-x=20 CE
+grandParent=20 CE
 2) As soon as we are done with method these local variables are destroyed and memory(RAM)
 is freed and is available to be used by other programs which means they are very efficient in
 managing the memory and that's why they are always recommended over instance variables.

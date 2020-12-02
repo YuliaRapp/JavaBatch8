@@ -1,4 +1,4 @@
-package com.syntax.reviewlass4;
+package com.syntax.reviewclass4;
 
 public class Librarian {
     private String name;

@@ -1,11 +1,17 @@
 package com.syntax.class27;
 
 public abstract class File {
+
+    int number;
+    private void method(){
+        System.out.println("I can have private methods");
+    }
     public abstract void open();
     public void edit(){
         System.out.println("I can edit any file");
     }
     public void close(){
+        method();
         System.out.println("I can close any file");
     }
 }

@@ -20,6 +20,7 @@ public class ClassTask2 {
         this.balance = balance;
         this.interest = interest;
     }
+
     //Breaktill 1:30
       double  getInterest(){
         return balance * interest;
