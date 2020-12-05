@@ -6,7 +6,8 @@ public class FlowerTester {
     public static void main(String[] args) {
 
         ArrayList<Flower> flowerArrayList=new ArrayList<>();
-        flowerArrayList.add(new SunFlower("Sunflower","Yellow"));
+        SunFlower sunFlower = new SunFlower("Sunflower", "Yellow");
+        flowerArrayList.add(sunFlower);
         flowerArrayList.add(new Tulip("Tulip","Red"));
         flowerArrayList.add(new Rose("Rose","Pink"));
 
