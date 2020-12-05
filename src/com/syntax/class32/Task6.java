@@ -10,6 +10,7 @@ public class Task6 {
         Each student object should have name and studentID.
         Display name of each student.
          */
+    //Break till 02PM
         public static void main (String[] args) {
             StudentType student1 = new StudentType("Sofiane", 12345);
             StudentType student2 = new StudentType("Abderrahman", 13456);
