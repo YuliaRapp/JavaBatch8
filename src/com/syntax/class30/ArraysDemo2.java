@@ -10,6 +10,8 @@ public class ArraysDemo2 {
         arrayList.add(100);
         arrayList.add(105);
         arrayList.add(102);
+
+
         System.out.println(arrayList);
         System.out.println( arrayList.size());
         arrayList.remove(3);
