@@ -13,8 +13,8 @@ public class MapDemo4 {
         hasMap.put("Daria", 555);
         hasMap.put("Jassor", 666);
 
-        Set<String> set = new HashSet<>();
-        Iterator<String> sets = set.iterator();
+      /*  Set<String> set = new HashSet<>();
+        Iterator<String> sets = set.iterator();*/
 
 
         Set<Map.Entry<String, Integer>> set1 = hasMap.entrySet();
