@@ -10,5 +10,6 @@ How to declare:
       value can be any object
 
 Always use Iterator to remove the elements from collections and maps
-we can call all the methods on the map except remove.
+we can call all the methods on the map except remove while inside the iterator.
+
 

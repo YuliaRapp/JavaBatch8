@@ -1,6 +1,6 @@
 package com.syntax.class33;
 
-public class ThreadSafty {
+public class ThreadSafety {
 
     public static void main(String[] args) {
 
