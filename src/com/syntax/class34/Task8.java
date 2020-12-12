@@ -7,7 +7,7 @@ public class Task8 {
     Create a collection of integers in which you can keep duplicates.
     Write a logic to find sum of all integers
      */
-    //break till
+    //break till 1:40
     public static void main(String[] args) {
         ArrayList<Integer> numbers = new ArrayList<>();
         numbers.add(11);
