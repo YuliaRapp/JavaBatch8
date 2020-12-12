@@ -16,7 +16,7 @@ public class Task6 {
      */
 
     public static void main(String[] args) {
-        Map<String, Integer> employeeMap = new LinkedHashMap<>();
+        Map<String, Integer> employeeMap = new HashMap<>();
         employeeMap.put("Skywalker", 150_000);
         employeeMap.put("Kenobi", 175_000);
         employeeMap.put( "Palpatine", 999_999);
