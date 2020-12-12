@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.Scanner;
@@ -15,15 +16,26 @@ public class FileHandling {
     public static void main(String[] args) throws IOException {
 
 
+        //Storing the path of the file in a String variable
         String path="C:\\Users\\Asghar Nazir\\IdeaProjects\\JavaBatch8\\src\\com\\syntax\\class34\\Credentials.properties";
 
+        //creating a connection to file
         FileInputStream fileInputStream=new FileInputStream(path);
 
 
+
         Properties properties=new Properties();
+        //Loading the data from file to java program
         properties.load(fileInputStream);
-        String username= (String) properties.get("username");
-        String pass= (String) properties.get("password");
+
+        //getting the values
+        String username= properties.getProperty("username");
+        String pass=  properties.getProperty("password");
+        int number=Integer.parseInt(properties.getProperty("phoneNumber"));
+        System.out.println(number);
+
+
+        //storing the data to file
 
 
         System.setProperty ( "webdriver.chrome.driver", "drivers/chromedriver.exe" );
