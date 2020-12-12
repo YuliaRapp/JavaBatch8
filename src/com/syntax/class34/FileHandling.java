@@ -4,11 +4,19 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class FileHandling {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
+
+
+        String path="C:\\Users\\Asghar Nazir\\IdeaProjects\\JavaBatch8\\src\\com\\syntax\\class34\\Credentials.properties";
+
+        FileInputStream fileInputStream=new FileInputStream(path);
+
 
 
         System.setProperty ( "webdriver.chrome.driver", "drivers/chromedriver.exe" );
