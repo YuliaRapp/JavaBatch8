@@ -18,4 +18,11 @@ Every time we have duplicate data we should be using the excel files
 How to handle Excel files in java
 we can handle excel files using apache poi library.
 
+Create 10 rows with below columns
+FirstName LastName Age Salary Hobby
+fill these rows with random info
+rad these rows check if the salary is greater than 100k
+if yes store that row in new file
+
+Break till 12:25
 
