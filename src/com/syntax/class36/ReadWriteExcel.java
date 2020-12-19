@@ -2,6 +2,8 @@ package com.syntax.class36;
 
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileInputStream;
@@ -19,16 +21,11 @@ public class ReadWriteExcel {
         FileInputStream fileInputStream=new FileInputStream(inputFilePath); //creating the input stream to read the data
         FileOutputStream fileOutputStream=new FileOutputStream(outputFilePath); //creating the output stream to write the data
 
-
-
         XSSFWorkbook inputXSSWorkbook=new XSSFWorkbook(fileInputStream); //used to manipulate the file with extension xlsx
         /// HSSFWorkbook hssfWorkbook=new HSSFWorkbook(); To manipulate the files with extension xls
         XSSFWorkbook outputXSSWorkbook=new XSSFWorkbook(); // we don't need to specify the output stream in the constructor
 
-
-
         Sheet sheet=inputXSSWorkbook.getSheet("PersonData");
-
         List<PersonInfo> personInfoList=new ArrayList<>();
         for (int i = 1; i <sheet.getPhysicalNumberOfRows() ; i++) {
             Row row=sheet.getRow(i);
@@ -46,11 +43,18 @@ public class ReadWriteExcel {
 
         System.out.println(personInfoList);
 
-        outputXSSWorkbook.createSheet("OutputSheet");
+        XSSFSheet outputSheet = outputXSSWorkbook.createSheet("OutputSheet");
         for (int i = 0; i < personInfoList.size(); i++) {
+            XSSFRow row = outputSheet.createRow(i);
+            PersonInfo personInfo = personInfoList.get(i);
 
-
+            row.createCell(0).setCellValue(personInfo.getFirstName());
+            row.createCell(1).setCellValue(personInfo.getLastName());
+            row.createCell(2).setCellValue(personInfo.getAge());
+            row.createCell(3).setCellValue(personInfo.getSalary());
         }
+
+        outputXSSWorkbook.write(fileOutputStream);
 
     }
 }
