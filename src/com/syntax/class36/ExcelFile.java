@@ -2,6 +2,7 @@ package com.syntax.class36;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -21,6 +22,7 @@ public class ExcelFile {
        /// HSSFWorkbook hssfWorkbook=new HSSFWorkbook(); To manipulate the files with extension xls
         Sheet sheet=xssfWorkbook.getSheet("PersonData");
 
+
         List<PersonInfo> personInfoList=new ArrayList<>();
         for (int i = 1; i <sheet.getPhysicalNumberOfRows() ; i++) {
             Row row=sheet.getRow(i);
@@ -32,6 +34,7 @@ public class ExcelFile {
             personInfoList.add(personInfo);
 
         }
+
         System.out.println(personInfoList);
 
 
