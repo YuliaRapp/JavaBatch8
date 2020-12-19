@@ -22,7 +22,11 @@ public class ExcelFileHandlingDemo4 {
         for (int row = 0; row < sheet.getPhysicalNumberOfRows(); row++) {
             Row rowData=sheet.getRow(row); //getting the rows one by one using the outer loop
             for (int j = 0; j <rowData.getPhysicalNumberOfCells() ; j++) {
-                System.out.print(rowData.getCell(j)+"  "); //getting the cells one by one using inner loop
+                System.out.print(rowData.getCell(j)+"  ");
+
+
+
+                //getting the cells one by one using inner loop
             }
             System.out.println();
             /*String firstName=row.getCell(0).getStringCellValue();
