@@ -5,6 +5,7 @@ public abstract class Employee1 {
     double bonus;
     double medicalAllowance;
 
+
     public Employee1(double salary, double bonus, double medicalAllowance) {
         this.salary = salary;
         this.bonus = bonus;

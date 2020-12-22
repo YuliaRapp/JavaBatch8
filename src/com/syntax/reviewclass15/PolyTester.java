@@ -26,5 +26,7 @@ public class PolyTester {
 
         ((Lawyer)var3).method2();
 
+
+
     }
 }
