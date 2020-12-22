@@ -1,0 +1,18 @@
+Polymorphism:
+polymorphism is the ability of the object to take many forms
+polymorphism - can be achieved in 2 ways  : overloading(static)/compile time,
+dynamic (overriding)/runtime
+For overriding to work we must have a relationship of inheritance between two classes.
+The things which do not play their part in inheritance can not be overridden
+private members, initializer block and constructors
+2) if a method is final we can not override it.
+3) if a class is final we can not override anything from that class because we can not
+inheritance from that class
+Must have for overriding
+1) method signature must be same i.e name of the method parameter sequence types and number of
+parameters
+2) Return type should be same
+3)we can not narrow the visibility for example if a method has a public access modifier we can make it private
+
+
+
