@@ -1,0 +1,23 @@
+OOPS
+1)Inheritance
+2) Polymorphism
+3)Abstraction
+4) Encapsulation
+Abstraction:
+Process of hiding implementation details and showing only the important
+info to the user.
+Real Life Examples
+We use different different apps like whatsapp we just write the text and click on share
+button we don't care how that text is the converted in the form of signals and sent to
+the other party we just select the contact and write text click on send button text is
+sent
+2) Think of the car we don't care how the engine works we only care how to use steering gas paddle
+all of the internal details have been hidden from us.
+3) Other examples when we put food into the microwave we don't care how it works we just
+set the timer and the temperature.
+How to implement Abstraction in Java.
+1) Using Abstract classes
+2) Using Interfaces
+
+
+
