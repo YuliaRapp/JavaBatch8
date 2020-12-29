@@ -3,6 +3,7 @@ package com.syntax.reviewclass15;
 public class EmployeeTester {
     public static void main(String[] args) {
 
+
         Employee1 fullTimeEmp=
                 new FullTimeEmployee1(100000,20000,30000);
         Employee1 partTimeEmp=
