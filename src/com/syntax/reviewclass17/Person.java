@@ -29,8 +29,6 @@ public class Person implements Comparable<Person>{
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Person)) return false;
         Person person = (Person) o;
         return getAge() == person.getAge() && Objects.equals(getName(), person.getName());
     }
