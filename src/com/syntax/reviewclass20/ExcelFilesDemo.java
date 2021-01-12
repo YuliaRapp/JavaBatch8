@@ -6,6 +6,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +30,13 @@ public class ExcelFilesDemo {
 
         System.out.println(allFileData);
 
+        fileInputStream.close();
+        FileOutputStream fileOutputStream=new FileOutputStream(path);
+        Row row = sheet.createRow(3);
+        row.createCell(0).setCellValue("Marta");
+        row.createCell(1).setCellValue("Ostash");
+        row.createCell(2).setCellValue("18");
+        workbook.write(fileOutputStream);
 
 
     }

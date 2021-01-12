@@ -5,3 +5,7 @@ whenever we have to read the data from the file we use FileInputStream and
 whenever we have to write the data we use FileOutputStream.
 Properties file:
 Properties files contains the configuration data in the form of key and value pairs.
+Exceptions:
+This is a mechanism in java to handle errors
+why we should be using the exceptions because they gives us a lot of standard information
+about our errors like line number the method name the class name complete stacktrace.
